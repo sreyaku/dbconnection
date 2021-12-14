@@ -5,7 +5,7 @@ import java.util.*;
 
 public class EmployeeDetails {
 	public static void main(String[] args) {
-		Credential dbase = new Credential();
+		Credentials dbase = new Credentials();
 		// Driver and Database connection.
 		try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/employee", dbase.username,
 				dbase.pword); Statement stmt = con.createStatement();) {
